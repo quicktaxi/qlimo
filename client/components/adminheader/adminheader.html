@@ -1,0 +1,53 @@
+<div class="dashboard-content dashboard-header">
+
+<div class="top-bar" ">
+
+  <div class="toggle-btn" id="navigation-toggle" ng-click="headerCtrl.toggleState()"> <span></span> <span></span> <span></span> </div>
+  <h1 ng-show="headerCtrl.isAdmin()">Admin Management</h1>
+  <h1 ng-hide="headerCtrl.isAdmin()">Service Provider Management</h1>
+
+  <div class="row">
+    <div class="fluid-container">
+        <div class="select-drivers"  ng-show="headerCtrl.isAdmin()" > 
+        <md-input-container>
+          <label>Select service provider to view drivers</label>
+          <md-select ng-model="headerCtrl.switchServiceProviderData" ng-change="headerCtrl.switchServiceProvider()">
+            <md-option ng-repeat="driver in headerCtrl.serviceProviderLists" value="{{driver._id}}"> {{driver.company_name}} </md-option>
+          </md-select>
+        </md-input-container>
+    </div>
+    </div>
+  </div>  
+<div class="fluid-container">
+  <!--Q-Limo Live Tracking-->
+  <div class="dashboard-heading" style="background-color:lightgreen;">
+        <h2>Q-LIMO LIVE TRACKING</h2>
+      </div>
+      <div class="trips-payment-container clearfix" style="background-color:rgb(250,250,250)">
+      <div class="row" ">
+      <div class="live-tracking-text col-lg-3">
+      On Trip <span>00</span> <sub>(book now)</sub>
+      </div>
+
+      <div class="live-tracking-text col-lg-3">
+      Scheduled Trips <span>00</span>
+      </div>
+
+      <div class="live-tracking-text col-lg-3">
+      Free Drivers <span>00</span>
+      </div>
+
+      <div class="live-tracking-text col-lg-3">
+      New Passengers  <span>00</span> <sub>(today)</sub>
+      </div>
+      </div>
+
+      </div>
+<!--Q-Limo Live Tracking-->
+</div>
+
+
+             
+    </div>
+
+</div>

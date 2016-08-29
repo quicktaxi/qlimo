@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Section</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<form>
+					<div class="title">
+						<h2>Hourly Based Fare Calculator Form</h2><br>
+						<div class="form-group">
+							<label for="id1">Fare Group Id</label>
+							<input type="number" min="1" step="1" id="id1" class="form-control" placeholder="Fare Group ID">
+						</div>
+						<div class="form-group">
+							<label for="id1">Fare Group Type</label>
+							<select id="id1" placeholder="Fare Froup Type" class="form-control">
+								<option>Permanant</option>
+								<option>Editable</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Fare Group Name</label>
+							<select id="id1" placeholder="Fare Froup Name" class="form-control">
+								<option>Low </option>
+								<option>Plate-1 </option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Fare Calculator Type</label>
+							<select id="id1" placeholder="Fare Calculator Type" class="form-control">
+								<option>Low (Hourly-Time Based)</option>
+								<option>Plate-1 (Hourly-Time Based)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Minimum Fare</label>
+							<select id="id1" placeholder="Minimum Fare" class="form-control">
+								<option>$30 -- Taxi</option>
+								<option>$40 -- SUV</option>
+								<option>$50 -- Limousine</option>
+								<option>$60 -- Lux-Limousine</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Ride Hours</label>
+							<input type="number" min="1" step="1" max="24" id="id1" class="form-control" placeholder="Ride Hours">
+						</div>
+						<div class="form-group">
+							<label for="id1">Round-up</label>
+							<input type="number" min="0.00" step="0.05" max="1" id="id1" class="form-control" placeholder="Round-up">
+						</div>
+						<div class="form-group">
+							<label for="id1">Minimum Base KM</label>
+							<select id="id1" placeholder="Minimum Base KM" class="form-control">
+								<option>3 KM -- Taxi</option>
+								<option>4 KM -- SUV</option>
+								<option>5 KM -- Limousine</option>
+								<option>6 KM -- Lux-Limousine</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Minimum Base fare</label>
+							<select id="id1" placeholder="Minimum Base Fare" class="form-control">
+								<option>$30 -- Taxi</option>
+								<option>$40 -- SUV</option>
+								<option>$50 -- Limousine</option>
+								<option>$60 -- Lux-Limousine</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Price Per KM</label>
+							<select id="id1" placeholder="Price Per KM" class="form-control">
+								<option>$3/KM -- Taxi</option>
+								<option>$4/KM -- SUV</option>
+								<option>$5/KM -- Limousine</option>
+								<option>$6/KM -- Lux-Limousine</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="id1">Out Side City Limit</label>
+							<input type="text" id="id1" class="form-control" placeholder="Out Side City Limit">
+						</div>
+						<div class="form-group">
+							<label for="id1">Pick Up Charges</label>
+							<input type="text" id="id1" class="form-control" placeholder="Pick Up Charges">
+						</div>
+						<div class="form-group">
+							<label for="id1">Night Charges</label>
+							<input type="text" id="id1" class="form-control" placeholder="Night Charges">
+						</div>
+						<div class="form-group">
+							<label for="id1">Cancellation Fee</label>
+							<input type="text" id="id1" class="form-control" placeholder="Cancellation Fee">
+						</div>
+						<div class="form-group">
+							<label for="id1">TAX</label>
+							<input type="text" id="id1" class="form-control" placeholder="TAX">
+						</div>
+						<div class="form-group">
+							<label for="id1">Promo Code</label>
+							<input type="text" id="id1" class="form-control" placeholder="Promo Code">
+						</div>
+						<button class="btn btn-primary pull-right" type="submit">Save</button>
+						<button class="btn btn-default pull-left" type="dismiss">Clear</button>
+					</div>
+				</form>
+				
+			</div>
+			
+		</div>		
+	</div>
+	
+
+
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="bootstrap.min.js" type="text/javascript"></script>
+	
+</body>
